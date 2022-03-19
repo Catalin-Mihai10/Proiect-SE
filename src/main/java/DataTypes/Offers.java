@@ -1,19 +1,19 @@
 package DataTypes;
 
-import com.google.gson.annotations.SerializedName;
 import java.util.*;
 
 public class Offers {
-    @SerializedName("vacations")
-    private List<Vacation> offers;
+    private List<Vacation> offers = new ArrayList<>();
 
-    public Offers(){
-        offers = new ArrayList<>();
-    }
+    public Offers(){}
 
     public void addOffer(Vacation vacation){
         if(!offers.contains(vacation))
             offers.add(vacation);
+    }
+
+    public void setOffers(List<Vacation> offers){
+        this.offers = offers;
     }
 
     public void removeOffer(Vacation vacation){
@@ -23,5 +23,14 @@ public class Offers {
 
     public List<Vacation> getOffers(){
         return offers;
+    }
+
+    public String toString(){
+        String offersList = "";
+
+        for(Vacation v : offers)
+            offersList += v.toString() + Constants.NEW_LINE;
+
+        return offersList;
     }
 }

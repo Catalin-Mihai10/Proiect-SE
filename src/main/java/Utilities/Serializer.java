@@ -1,39 +1,49 @@
 package Utilities;
 
+import DataTypes.Constants;
+import DataTypes.Offers;
 import DataTypes.Vacation;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
+import java.io.Reader;
+import java.lang.reflect.Type;
 import java.util.*;
 
 public class Serializer {
     private String serializedData;
-    private List<Vacation> deserializedData;
+    private Offers deserializedData;
 
     public Serializer(){
-        serializedData = "";
-        deserializedData = new ArrayList<>();
+        serializedData = Constants.OFFERS +
+                         Constants.LINE_SEPARATOR +
+                         Constants.NEW_LINE;
+        deserializedData = new Offers();
     }
 
-    public String serializeData(List<Vacation> vacations){
+    public String serializeData(Offers offers){
 
         Gson gson = new GsonBuilder()
+                .registerTypeAdapter(Vacation.class, new VacationAdapter())
                 .setPrettyPrinting()
                 .create();
 
-        serializedData = gson.toJson(vacations);
+        serializedData += gson.toJson(offers.getOffers());
 
         return serializedData;
     }
 
-    public List<Vacation> deserializeData(BufferedReader bufferedReader){
+    public Offers deserializeData(BufferedReader bufferedReader){
         Gson gson = new GsonBuilder()
+                .registerTypeAdapter(Offers.class, new OffersAdapter())
                 .setPrettyPrinting()
                 .create();
 
-        Vacation[] vacations = gson.fromJson(bufferedReader, Vacation[].class);
-        deserializedData = Arrays.asList(vacations);
+        Offers offers = gson.fromJson(bufferedReader, Offers.class);
+
+        deserializedData = offers;
 
         return deserializedData;
     }

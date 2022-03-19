@@ -33,7 +33,7 @@ public class Enums {
     {
         COUNTRY,
         EUROPE,
-        OUTSIDE,
+        GLOBAL,
         IRRELEVANT,
         UNDEFINED
     }

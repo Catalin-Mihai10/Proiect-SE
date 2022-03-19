@@ -3,16 +3,18 @@ package DataTypes;
 public class Vacation {
     private String name;
     private String description;
-    private int age;
+    private String age;
     private Enums.Temperature temperature;
     private Enums.Activities activity;
     private Enums.Budget budget;
     private Enums.Locations location;
 
+    public Vacation(){}
+
     public Vacation(
             String name,
             String description,
-            int ageRange,
+            String ageRange,
             Enums.Temperature temperature,
             Enums.Activities activity,
             Enums.Budget budget,
@@ -33,7 +35,7 @@ public class Vacation {
 
     public String getDescription() {return description;}
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
@@ -61,7 +63,7 @@ public class Vacation {
         this.description = description;
     }
 
-    public void setAge(int age){
+    public void setAge(String age){
         this.age = age;
     }
 
@@ -79,5 +81,19 @@ public class Vacation {
 
     public void setLocation(Enums.Locations location){
         this.location = location;
+    }
+
+    public String toString(){
+        String vacationString = Constants.EMPTY;
+
+        vacationString += Constants.NEW_LINE + Constants.NAME + Constants.LINE_SEPARATOR + Constants.SPACE + getName() + Constants.NEW_LINE +
+                Constants.DESCRIPTION + Constants.LINE_SEPARATOR + Constants.SPACE + getDescription() + Constants.NEW_LINE +
+                Constants.ACTIVITY + Constants.LINE_SEPARATOR + Constants.SPACE + getActivity() + Constants.NEW_LINE +
+                Constants.AGE + Constants.LINE_SEPARATOR + Constants.SPACE + getAge() + Constants.NEW_LINE +
+                Constants.TEMPERATURE + Constants.LINE_SEPARATOR + Constants.SPACE + getTemperature() + Constants.NEW_LINE +
+                Constants.BUDGET + Constants.LINE_SEPARATOR + Constants.SPACE + getBudget() + Constants.NEW_LINE +
+                Constants.LOCATION + Constants.LINE_SEPARATOR + Constants.SPACE + getLocation() + Constants.NEW_LINE;
+
+        return vacationString;
     }
 }
