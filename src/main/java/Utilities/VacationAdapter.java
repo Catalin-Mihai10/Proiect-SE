@@ -19,7 +19,7 @@ public class VacationAdapter extends TypeAdapter<Vacation> {
         jsonWriter.name(Constants.DESCRIPTION);
         jsonWriter.value(vacation.getDescription());
         jsonWriter.name(Constants.AGE);
-        jsonWriter.value(vacation.getAge());
+        jsonWriter.value(String.valueOf(vacation.getAge()));
         jsonWriter.name(Constants.TEMPERATURE);
         jsonWriter.value(String.valueOf(vacation.getTemperature()));
         jsonWriter.name(Constants.ACTIVITY);
@@ -34,7 +34,7 @@ public class VacationAdapter extends TypeAdapter<Vacation> {
     @Override
     public Vacation read(JsonReader jsonReader) throws IOException {
         Vacation vacation = new Vacation(Constants.EMPTY,Constants.EMPTY,
-                                         "0", null,null,
+                                         null, null,null,
                                          null,null);
         jsonReader.beginObject();
         String fieldName = Constants.EMPTY;
@@ -58,27 +58,27 @@ public class VacationAdapter extends TypeAdapter<Vacation> {
 
             if(Constants.AGE.equals(fieldName)){
                 jsonToken = jsonReader.peek();
-                vacation.setAge(jsonReader.nextString());
+                vacation.setAge(Enums.Age.convertFromStringToAge(jsonReader.nextString()));
             }
 
             if(Constants.TEMPERATURE.equals(fieldName)){
                 jsonToken = jsonReader.peek();
-                vacation.setTemperature(Enums.Temperature.valueOf(jsonReader.nextString()));
+                vacation.setTemperature(Enums.Temperature.convertFromStringToTemperature(jsonReader.nextString()));
             }
 
             if(Constants.ACTIVITY.equals(fieldName)){
                 jsonToken = jsonReader.peek();
-                vacation.setActivity(Enums.Activities.valueOf(jsonReader.nextString()));
+                vacation.setActivity(Enums.Activities.convertFromStringToActivity(jsonReader.nextString()));
             }
 
             if(Constants.BUDGET.equals(fieldName)){
                 jsonToken = jsonReader.peek();
-                vacation.setBudget(Enums.Budget.valueOf(jsonReader.nextString()));
+                vacation.setBudget(Enums.Budget.convertFromStringToBudget(jsonReader.nextString()));
             }
 
             if(Constants.LOCATION.equals(fieldName)){
                 jsonToken = jsonReader.peek();
-                vacation.setLocation(Enums.Locations.valueOf(jsonReader.nextString()));
+                vacation.setLocation(Enums.Locations.convertFromStringToBudget(jsonReader.nextString()));
             }
 
         }

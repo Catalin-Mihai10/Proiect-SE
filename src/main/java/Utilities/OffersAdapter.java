@@ -4,8 +4,6 @@ import DataTypes.Constants;
 import DataTypes.Enums;
 import DataTypes.Offers;
 import DataTypes.Vacation;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
@@ -39,7 +37,6 @@ public class OffersAdapter extends TypeAdapter<Offers> {
 
                 if(Constants.OFFERS.equals(fieldName)){
                     jsonToken = jsonReader.peek();
-                    //String list = jsonReader.nextString();
                     jsonReader.beginArray();
                     while(jsonReader.hasNext()){
                         Vacation vacation = new Vacation();
@@ -65,27 +62,27 @@ public class OffersAdapter extends TypeAdapter<Offers> {
 
                             if(Constants.AGE.equals(fieldNameV)){
                                 jsonTokenV = jsonReader.peek();
-                                vacation.setAge(jsonReader.nextString());
+                                vacation.setAge(Enums.Age.convertFromStringToAge(jsonReader.nextString()));
                             }
 
                             if(Constants.TEMPERATURE.equals(fieldNameV)){
                                 jsonTokenV = jsonReader.peek();
-                                vacation.setTemperature(Enums.Temperature.valueOf(jsonReader.nextString()));
+                                vacation.setTemperature(Enums.Temperature.convertFromStringToTemperature(jsonReader.nextString()));
                             }
 
                             if(Constants.ACTIVITY.equals(fieldNameV)){
                                 jsonTokenV = jsonReader.peek();
-                                vacation.setActivity(Enums.Activities.valueOf(jsonReader.nextString()));
+                                vacation.setActivity(Enums.Activities.convertFromStringToActivity(jsonReader.nextString()));
                             }
 
                             if(Constants.BUDGET.equals(fieldNameV)){
                                 jsonTokenV = jsonReader.peek();
-                                vacation.setBudget(Enums.Budget.valueOf(jsonReader.nextString()));
+                                vacation.setBudget(Enums.Budget.convertFromStringToBudget(jsonReader.nextString()));
                             }
 
                             if(Constants.LOCATION.equals(fieldNameV)){
                                 jsonTokenV = jsonReader.peek();
-                                vacation.setLocation(Enums.Locations.valueOf(jsonReader.nextString()));
+                                vacation.setLocation(Enums.Locations.convertFromStringToBudget(jsonReader.nextString()));
                             }
                         }
                         jsonReader.endObject();

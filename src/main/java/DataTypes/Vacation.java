@@ -3,7 +3,7 @@ package DataTypes;
 public class Vacation {
     private String name;
     private String description;
-    private String age;
+    private Enums.Age age;
     private Enums.Temperature temperature;
     private Enums.Activities activity;
     private Enums.Budget budget;
@@ -14,7 +14,7 @@ public class Vacation {
     public Vacation(
             String name,
             String description,
-            String ageRange,
+            Enums.Age ageRange,
             Enums.Temperature temperature,
             Enums.Activities activity,
             Enums.Budget budget,
@@ -35,7 +35,7 @@ public class Vacation {
 
     public String getDescription() {return description;}
 
-    public String getAge() {
+    public Enums.Age getAge() {
         return age;
     }
 
@@ -63,7 +63,7 @@ public class Vacation {
         this.description = description;
     }
 
-    public void setAge(String age){
+    public void setAge(Enums.Age age){
         this.age = age;
     }
 

@@ -5,12 +5,8 @@ import DataTypes.Offers;
 import DataTypes.Vacation;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
-import java.io.Reader;
-import java.lang.reflect.Type;
-import java.util.*;
 
 public class Serializer {
     private String serializedData;
@@ -41,9 +37,7 @@ public class Serializer {
                 .setPrettyPrinting()
                 .create();
 
-        Offers offers = gson.fromJson(bufferedReader, Offers.class);
-
-        deserializedData = offers;
+        deserializedData = gson.fromJson(bufferedReader, Offers.class);
 
         return deserializedData;
     }

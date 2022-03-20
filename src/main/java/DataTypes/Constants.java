@@ -26,4 +26,26 @@ public class Constants {
     public static final String ACTIVITY = "activity";
     public static final String BUDGET = "budget";
     public static final String LOCATION = "location";
+
+    //User input values
+    public static final String CHOSEN_AGE_YOUNG = "18 - 35";
+    public static final String CHOSEN_AGE_MIDDLE = "36 - 50";
+    public static final String CHOSEN_AGE_OLD = "51+";
+    public static final String CHOSEN_TEMPERATURE_COLD = "Cold" ;
+    public static final String CHOSEN_TEMPERATURE_TEMPERATE= "Temperate";
+    public static final String CHOSEN_TEMPERATURE_WARM = "Warm";
+    public static final String CHOSEN_ACTIVITY_RELAXING = "Relaxing";
+    public static final String CHOSEN_ACTIVITY_RECREATIONAL = "Recreational";
+    public static final String CHOSEN_ACTIVITY_SPORTS = "Sport";
+    public static final String SET_BUDGET_REDUCED = "1300";
+    public static final String SET_BUDGET_MEDIUM = "3500";
+    public static final String SET_BUDGET_LARGE = "8000";
+    public static final String CHOSEN_LOCATION_COUNTRY = "Inside the country";
+    public static final String CHOSEN_LOCATION_EUROPE = "Inside Europe";
+    public static final String CHOSEN_LOCATION_GLOBAL = "Everywhere in the world";
+    public static final String IRRELEVANT = "Irrelevant";
+
+    //Value assignement
+    public static final Double MAX_VALUE = 1.00;
+    public static final Double MIN_VALUE = 0.00;
 }

@@ -17,8 +17,7 @@ public class Offers {
     }
 
     public void removeOffer(Vacation vacation){
-        if(offers.contains(vacation))
-            offers.remove(vacation);
+        offers.remove(vacation);
     }
 
     public List<Vacation> getOffers(){
@@ -26,11 +25,11 @@ public class Offers {
     }
 
     public String toString(){
-        String offersList = "";
+        StringBuilder offersList = new StringBuilder();
 
         for(Vacation v : offers)
-            offersList += v.toString() + Constants.NEW_LINE;
+            offersList.append(v.toString()).append(Constants.NEW_LINE);
 
-        return offersList;
+        return offersList.toString();
     }
 }
