@@ -31,19 +31,19 @@ public class Constants {
     public static final String CHOSEN_AGE_YOUNG = "18 - 35";
     public static final String CHOSEN_AGE_MIDDLE = "36 - 50";
     public static final String CHOSEN_AGE_OLD = "51+";
-    public static final String CHOSEN_TEMPERATURE_COLD = "Cold" ;
-    public static final String CHOSEN_TEMPERATURE_TEMPERATE= "Temperate";
-    public static final String CHOSEN_TEMPERATURE_WARM = "Warm";
-    public static final String CHOSEN_ACTIVITY_RELAXING = "Relaxing";
-    public static final String CHOSEN_ACTIVITY_RECREATIONAL = "Recreational";
-    public static final String CHOSEN_ACTIVITY_SPORTS = "Sport";
+    public static final String CHOSEN_TEMPERATURE_COLD = "COLD" ;
+    public static final String CHOSEN_TEMPERATURE_TEMPERATE= "TEMPERATE";
+    public static final String CHOSEN_TEMPERATURE_WARM = "WARM";
+    public static final String CHOSEN_ACTIVITY_RELAXING = "RELAXING";
+    public static final String CHOSEN_ACTIVITY_RECREATIONAL = "RECREATIONAL";
+    public static final String CHOSEN_ACTIVITY_SPORTS = "SPORTS";
     public static final String SET_BUDGET_REDUCED = "1300";
     public static final String SET_BUDGET_MEDIUM = "3500";
     public static final String SET_BUDGET_LARGE = "8000";
     public static final String CHOSEN_LOCATION_COUNTRY = "Inside the country";
     public static final String CHOSEN_LOCATION_EUROPE = "Inside Europe";
     public static final String CHOSEN_LOCATION_GLOBAL = "Everywhere in the world";
-    public static final String IRRELEVANT = "Irrelevant";
+    public static final String IRRELEVANT = "IRRELEVANT";
 
     //Value assignement
     public static final Double MAX_VALUE = 1.00;

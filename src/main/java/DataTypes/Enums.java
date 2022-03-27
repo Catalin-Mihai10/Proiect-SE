@@ -124,15 +124,21 @@ public class Enums {
         public static Budget convertFromStringToBudget(String budget)
         {
             Budget returnedBudget = UNDEFINED;
-            if( Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_REDUCED))
-                returnedBudget = REDUCED;
-            if( (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_REDUCED))
-                && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
-                || (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
-                    && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_LARGE)))
-                returnedBudget = MEDIUM;
-            if( Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_LARGE))
-                returnedBudget = LARGE;
+            switch (budget){
+                case "REDUCED" -> returnedBudget = REDUCED;
+                case "MEDIUM" -> returnedBudget = MEDIUM;
+                case "LARGE" -> returnedBudget = LARGE;
+            }
+//            Budget returnedBudget = UNDEFINED;
+//            if( Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_REDUCED))
+//                returnedBudget = REDUCED;
+//            if( (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_REDUCED))
+//                && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
+//                || (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
+//                    && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_LARGE)))
+//                returnedBudget = MEDIUM;
+//            if( Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_LARGE))
+//                returnedBudget = LARGE;
 
             return returnedBudget;
         }
@@ -150,15 +156,15 @@ public class Enums {
             Locations returnedBudget;
             switch (location)
             {
-                case Constants.CHOSEN_LOCATION_COUNTRY -> {
+                case "COUNTRY" -> {
                     returnedBudget =  COUNTRY;
                     break;
                 }
-                case Constants.CHOSEN_LOCATION_EUROPE -> {
+                case "EUROPE" -> {
                     returnedBudget = EUROPE;
                     break;
                 }
-                case Constants.CHOSEN_LOCATION_GLOBAL ->  {
+                case "GLOBAL" ->  {
                     returnedBudget = GLOBAL;
                     break;
                 }

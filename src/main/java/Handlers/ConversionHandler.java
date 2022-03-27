@@ -5,7 +5,7 @@ import DataTypes.Enums;
 import DataTypes.Vacation;
 
 public class ConversionHandler {
-    private Vacation vacation = new Vacation(Constants.EMPTY, Constants.EMPTY,null,
+    private final Vacation vacation = new Vacation(Constants.EMPTY, Constants.EMPTY,null,
                                    null, null, null, null);
 
     public ConversionHandler(){}

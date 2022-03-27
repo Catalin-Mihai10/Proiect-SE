@@ -8,58 +8,27 @@ import java.util.*;
 
 public class ValueAssignment {
 
-    private Map<Enums.Age, Double> ageMap = new HashMap<>();
-    private Map<Enums.Temperature, Double> temperatureMap = new HashMap<>();
-    private Map<Enums.Activities, Double> activitiesMap = new HashMap<>();
-    private Map<Enums.Budget, Double> budgetMap = new HashMap<>();
-    private Map<Enums.Locations, Double> locationsMap = new HashMap<>();
+    private Enums.Age age = null;
+    private final Map<Enums.Temperature, Double> temperatureMap = new HashMap<>();
+    private final Map<Enums.Activities, Double> activitiesMap = new HashMap<>();
+    private final Map<Enums.Budget, Double> budgetMap = new HashMap<>();
+    private final Map<Enums.Locations, Double> locationsMap = new HashMap<>();
 
     public ValueAssignment(){}
 
     public void assingValues(Vacation vacation){
-        mapAgeValues(vacation, ageMap);
+        age = vacation.getAge();
         mapTemperatureValues(vacation, temperatureMap);
         mapActivitiesValues(vacation, activitiesMap);
         mapBudgetValues(vacation, budgetMap);
         mapLocationsValues(vacation, locationsMap);
     }
 
-    public Double getAgeValue(Enums.Age age){ return ageMap.get(age); }
+    public Enums.Age getAgeValue(){ return age; }
     public Double getTemperatureValue(Enums.Temperature temperature){ return temperatureMap.get(temperature); }
     public Double getActivitiesValue(Enums.Activities activity) { return activitiesMap.get(activity); }
     public Double getBudgetValue(Enums.Budget budget) { return budgetMap.get(budget); }
     public Double getLocationsValue(Enums.Locations location) { return locationsMap.get(location); }
-
-    public void mapAgeValues(Vacation vacation, Map<Enums.Age, Double> ageMap)
-    {
-        switch (vacation.getAge())
-        {
-            case YOUNG -> {
-                ageMap.put(Enums.Age.YOUNG, Constants.MAX_VALUE);
-                ageMap.put(Enums.Age.MIDDLE, Constants.MIN_VALUE);
-                ageMap.put(Enums.Age.OLD, Constants.MIN_VALUE);
-                break;
-            }
-            case MIDDLE -> {
-                ageMap.put(Enums.Age.YOUNG, Constants.MIN_VALUE);
-                ageMap.put(Enums.Age.MIDDLE, Constants.MAX_VALUE);
-                ageMap.put(Enums.Age.OLD, Constants.MIN_VALUE);
-                break;
-            }
-            case OLD -> {
-                ageMap.put(Enums.Age.YOUNG, Constants.MIN_VALUE);
-                ageMap.put(Enums.Age.MIDDLE, Constants.MIN_VALUE);
-                ageMap.put(Enums.Age.OLD, Constants.MAX_VALUE);
-                break;
-            }
-            case UNDEFINED -> {
-                ageMap.put(Enums.Age.YOUNG, Constants.MIN_VALUE);
-                ageMap.put(Enums.Age.MIDDLE, Constants.MIN_VALUE);
-                ageMap.put(Enums.Age.OLD, Constants.MIN_VALUE);
-                break;
-            }
-        }
-    }
 
     public void mapTemperatureValues(Vacation vacation, Map<Enums.Temperature, Double> temperatureMap)
     {
