@@ -1,56 +1,44 @@
 {
- "locatii":
+ "offers":
   [
 	{
 	"name":"Marea Neagra",
 	"description":"In vacanta la plaja",
 	"age":"1/2/3",
-	"temperature":"cald",
-	"activity":"relaxant",
-	"budget":"redus",
- 	"location":"aproape"
+	"temperature":"WARM",
+	"activity":"RELAXING",
+	"budget":"REDUCED",
+ 	"location":"COUNTRY"
 	},
 	
 	{
 	"name":"Muntele mic",
 	"description":"La munte la o drumetie",
 	"age":"1/2",
-	"temperature":"rece",
-	"activity":"sportiv",
-	"budget":"redus",
- 	"location":"aproape"
+	"temperature":"COLD",
+	"activity":"SPORTS",
+	"budget":"REDUCED",
+ 	"location":"COUNTRY"
 	},
 	
 	{
 	"name":"Vizita Budapesta",
 	"description":"In vizita prin oras",
 	"age":"2",
-	"temperature":"temperat",
-	"activity":"recreativ",
-	"budget":"mediu",
- 	"location":"europa"
+	"temperature":"TEMPERATE",
+	"activity":"RECREATIONAL",
+	"budget":"MEDIUM",
+ 	"location":"EUROPE"
 	},
 	
 	{
 	"name":"Pelerinaj Ierusalim",
 	"description":"In vizita in orasul sfant",
 	"age":"2/3",
-	"temperature":"cald",
-	"activity":"irelevant",
-	"budget":"mare",
- 	"location":"global"
-	},
-
-	{
-	"name":"",
-	"description":"",
-	"age":"",
-	"temperature":"",
-	"activity":"",
-	"budget":"",
- 	"location":""
-	},
-	
-	
+	"temperature":"WARM",
+	"activity":"IRRELEVANT",
+	"budget":"LARGE",
+ 	"location":"GLOBAL"
+	}
   ]
 }
