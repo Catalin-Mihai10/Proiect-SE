@@ -49,19 +49,19 @@ public class Enums {
             Temperature returnedTemperature;
             switch (temperature)
             {
-                case Constants.CHOSEN_TEMPERATURE_COLD -> {
+                case Constants.CHOSEN_TEMPERATURE_COLD, Constants.USER_CHOSEN_TEMPERATURE_COLD -> {
                     returnedTemperature =  COLD;
                     break;
                 }
-                case Constants.CHOSEN_TEMPERATURE_TEMPERATE -> {
+                case Constants.CHOSEN_TEMPERATURE_TEMPERATE, Constants.USER_CHOSEN_TEMPERATURE_TEMPERATE -> {
                     returnedTemperature = TEMPERATE;
                     break;
                 }
-                case Constants.CHOSEN_TEMPERATURE_WARM ->  {
+                case Constants.CHOSEN_TEMPERATURE_WARM, Constants.USER_CHOSEN_TEMPERATURE_WARM ->  {
                     returnedTemperature = WARM;
                     break;
                 }
-                case Constants.IRRELEVANT -> {
+                case Constants.IRRELEVANT, Constants.USER_IRRELEVANT -> {
                     returnedTemperature = IRRELEVANT;
                     break;
                 }
@@ -73,6 +73,7 @@ public class Enums {
             }
             return returnedTemperature;
         }
+
     }
 
     public enum Activities
@@ -88,19 +89,19 @@ public class Enums {
             Activities returnedActivity;
             switch (activity)
             {
-                case Constants.CHOSEN_ACTIVITY_RELAXING -> {
+                case Constants.CHOSEN_ACTIVITY_RELAXING, Constants.USER_CHOSEN_ACTIVITY_RELAXING -> {
                     returnedActivity =  RELAXING;
                     break;
                 }
-                case Constants.CHOSEN_ACTIVITY_RECREATIONAL -> {
+                case Constants.CHOSEN_ACTIVITY_RECREATIONAL, Constants.USER_CHOSEN_ACTIVITY_RECREATIONAL -> {
                     returnedActivity = RECREATIONAL;
                     break;
                 }
-                case Constants.CHOSEN_ACTIVITY_SPORTS ->  {
+                case Constants.CHOSEN_ACTIVITY_SPORTS, Constants.USER_CHOSEN_ACTIVITY_SPORTS ->  {
                     returnedActivity = SPORTS;
                     break;
                 }
-                case Constants.IRRELEVANT -> {
+                case Constants.IRRELEVANT, Constants.USER_IRRELEVANT -> {
                     returnedActivity = IRRELEVANT;
                     break;
                 }
@@ -125,20 +126,25 @@ public class Enums {
         {
             Budget returnedBudget = UNDEFINED;
             switch (budget){
-                case "REDUCED" -> returnedBudget = REDUCED;
-                case "MEDIUM" -> returnedBudget = MEDIUM;
-                case "LARGE" -> returnedBudget = LARGE;
+                case Constants.CHOSEN_BUDGET_REDUCED -> returnedBudget = REDUCED;
+                case Constants.CHOSEN_BUDGET_MEDIUM -> returnedBudget = MEDIUM;
+                case Constants.CHOSEN_BUDGET_LARGE -> returnedBudget = LARGE;
             }
-//            Budget returnedBudget = UNDEFINED;
-//            if( Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_REDUCED))
-//                returnedBudget = REDUCED;
-//            if( (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_REDUCED))
-//                && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
-//                || (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
-//                    && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_LARGE)))
-//                returnedBudget = MEDIUM;
-//            if( Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_LARGE))
-//                returnedBudget = LARGE;
+            return returnedBudget;
+        }
+
+        public static Budget convertFromStringToBudgetUser(String budget){
+            Budget returnedBudget = UNDEFINED;
+
+            if( Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_REDUCED))
+                returnedBudget = REDUCED;
+            if( (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_REDUCED))
+                && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
+                || (Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_MEDIUM))
+                    && (Integer.parseInt(budget) <= Integer.parseInt(Constants.SET_BUDGET_LARGE)))
+                returnedBudget = MEDIUM;
+            if( Integer.parseInt(budget) > Integer.parseInt(Constants.SET_BUDGET_LARGE))
+                returnedBudget = LARGE;
 
             return returnedBudget;
         }
@@ -156,15 +162,15 @@ public class Enums {
             Locations returnedBudget;
             switch (location)
             {
-                case "COUNTRY" -> {
+                case Constants.CHOSEN_LOCATION_COUNTRY, Constants.USER_CHOSEN_LOCATION_COUNTRY -> {
                     returnedBudget =  COUNTRY;
                     break;
                 }
-                case "EUROPE" -> {
+                case Constants.CHOSEN_LOCATION_EUROPE, Constants.USER_CHOSEN_LOCATION_EUROPE -> {
                     returnedBudget = EUROPE;
                     break;
                 }
-                case "GLOBAL" ->  {
+                case Constants.CHOSEN_LOCATION_GLOBAL, Constants.USER_CHOSEN_LOCATION_GLOBAL ->  {
                     returnedBudget = GLOBAL;
                     break;
                 }
