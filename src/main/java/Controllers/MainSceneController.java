@@ -1,10 +1,20 @@
-package com.example.proiectse;
+package Controllers;
 
+import Bayes.BayesInference;
+import Bayes.ValueAssignment;
+import DataTypes.Constants;
+import DataTypes.Offers;
+import DataTypes.Vacation;
+import Handlers.ConversionHandler;
+import Handlers.DataHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
@@ -13,6 +23,11 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map;
 
 public class MainSceneController {
 
@@ -50,17 +65,48 @@ public class MainSceneController {
         anchorPane.setBackground(new Background(backgroundFill));
     }
 
-    public void submit(ActionEvent actionEvent) {
+    public void submit(ActionEvent actionEvent) throws IOException {
         String age = (String) ageChoiceBox.getSelectionModel().getSelectedItem();
         String temperature = (String) tempChoiceBox.getSelectionModel().getSelectedItem();
         String activity = (String) activChoiseBox.getSelectionModel().getSelectedItem();
         String budget = bugetTextField.getText();
         String location = (String) locationChoiseBox.getSelectionModel().getSelectedItem();
 
-        System.out.println(age);
-        System.out.println(temperature);
-        System.out.println(activity);
+        Map<Vacation, Double> valuesOfProbability;
+
         System.out.println(budget);
-        System.out.println(location);
+        ConversionHandler conversionHandler = new ConversionHandler();
+        Vacation vacation = conversionHandler.convertFromUserInput("","",age,temperature,activity,budget,location);
+        ValueAssignment valueAssignment = new ValueAssignment();
+        valueAssignment.assingValues(vacation);
+
+        BayesInference bayesInference = new BayesInference(valueAssignment);
+        Offers offers = DataHandler.readFromFile(Constants.DATABASE_PATH);
+        System.out.println(Constants.DATABASE_PATH);
+        bayesInference.createInference(offers.getOffers());
+        valuesOfProbability = bayesInference.getValuesOfProbability();
+
+        System.out.println(valuesOfProbability.size());
+        Iterator<Vacation> iterator = valuesOfProbability.keySet().iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next().getName());
+        }
+
+        openWindow(actionEvent, valuesOfProbability);
+    }
+
+    private void openWindow(ActionEvent actionEvent, Map<Vacation, Double> valuesOfProbability) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getClassLoader().getResource("resultscene-view.fxml"));
+        AnchorPane anchorPane = loader.load();
+
+        ResultSceneController resultSceneController = loader.getController();
+        resultSceneController.setValuesOfProbability(valuesOfProbability);
+
+        Scene scene = new Scene(anchorPane);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+        ((Node) actionEvent.getSource()).getScene().getWindow().hide();
     }
 }

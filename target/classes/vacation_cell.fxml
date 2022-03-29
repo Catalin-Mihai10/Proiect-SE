@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:controller="Controllers.VacationCellController">
+    <graphic>
+        <VBox>
+            <children>
+                <Label fx:id="vacationName" />
+                <VBox>
+                    <children>
+                        <Label fx:id="vacationLocation" />
+                        <Label fx:id="vacationDescription"/>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </graphic>
+</fx:root>
