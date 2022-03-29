@@ -4,6 +4,7 @@ import DataTypes.Constants;
 import DataTypes.Vacation;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class BayesInference {
 
@@ -110,6 +111,18 @@ public class BayesInference {
         return tempArray;
     }
 
-    public Map<Vacation, Double> getValuesOfProbability(){ return valuesOfProbability; }
+    public List<Vacation> getValuesOfProbability(){
+        Map<Vacation, Double> resultsMap = valuesOfProbability.entrySet()
+                .stream()
+                .limit(10)
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, HashMap::new
+                ));
+
+        return new ArrayList<>(resultsMap.keySet());
+    }
 
 }
