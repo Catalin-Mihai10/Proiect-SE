@@ -28,9 +28,16 @@ public class Constants {
     public static final String LOCATION = "location";
 
     //User input values
-    public static final String CHOSEN_AGE_YOUNG = "18 - 35";
-    public static final String CHOSEN_AGE_MIDDLE = "36 - 50";
-    public static final String CHOSEN_AGE_OLD = "51+";
+    public static final String USER_CHOSEN_AGE_YOUNG = "18 - 35";
+    public static final String USER_CHOSEN_AGE_MIDDLE = "36 - 50";
+    public static final String USER_CHOSEN_AGE_OLD = "51+";
+    public static final String CHOSEN_YOUNG = "1";
+    public static final String CHOSEN_MIDDLE = "2";
+    public static final String CHOSEN_OLD = "3";
+    public static final String CHOSEN_YOUNG_MIDDLE = "1/2";
+    public static final String CHOSEN_YOUNG_OLD = "1/3";
+    public static final String CHOSEN_YOUNG_MIDDLE_OLD = "1/2/3";
+    public static final String CHOSEN_MIDDLE_OLD = "2/3";
     public static final String CHOSEN_TEMPERATURE_COLD = "COLD" ;
     public static final String CHOSEN_TEMPERATURE_TEMPERATE= "TEMPERATE";
     public static final String CHOSEN_TEMPERATURE_WARM = "WARM";

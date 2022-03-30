@@ -86,7 +86,45 @@ public class OffersAdapter extends TypeAdapter<Offers> {
                             }
                         }
                         jsonReader.endObject();
-                        vacationsTemp.add(vacation);
+
+                        switch (vacation.getAge()){
+                            case YOUNG_MIDDLE -> {
+                                Vacation vacation1 = vacation;
+                                Vacation vacation2 = vacation;
+                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_YOUNG));
+                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_MIDDLE));
+                                vacationsTemp.add(vacation1);
+                                vacationsTemp.add(vacation2);
+                            }
+                            case YOUNG_OLD -> {
+                                Vacation vacation1 = vacation;
+                                Vacation vacation2 = vacation;
+                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_YOUNG));
+                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_OLD));
+                                vacationsTemp.add(vacation1);
+                                vacationsTemp.add(vacation2);
+                            }
+                            case YOUNG_MIDDLE_OLD -> {
+                                Vacation vacation1 = vacation;
+                                Vacation vacation2 = vacation;
+                                Vacation vacation3 = vacation;
+                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_YOUNG));
+                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_MIDDLE));
+                                vacation3.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_OLD));
+                                vacationsTemp.add(vacation1);
+                                vacationsTemp.add(vacation2);
+                                vacationsTemp.add(vacation3);
+                            }
+                            case MIDDLE_OLD -> {
+                                Vacation vacation1 = vacation;
+                                Vacation vacation2 = vacation;
+                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_MIDDLE));
+                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_OLD));
+                                vacationsTemp.add(vacation1);
+                                vacationsTemp.add(vacation2);
+                            }
+                            default -> vacationsTemp.add(vacation);
+                        }
                     }
                     jsonReader.endArray();
             }
