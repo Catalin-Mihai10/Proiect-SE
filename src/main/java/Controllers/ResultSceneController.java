@@ -2,24 +2,51 @@ package Controllers;
 
 import DataTypes.Vacation;
 import javafx.fxml.FXML;
-import javafx.scene.control.ListView;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.CycleMethod;
+import javafx.scene.paint.LinearGradient;
+import javafx.scene.paint.Stop;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ResultSceneController {
 
-    private List<Vacation> valuesOfProbability = new ArrayList<>();
+    private final List<Vacation> valuesOfProbability = new ArrayList<>();
 
     @FXML
-    private ListView<Vacation> vacationListView;
+    private AnchorPane anchorPane;
+    @FXML
+    private VBox vBox;
 
     @FXML
-    private void initialize(){
-       // vacationListView.getItems().add(valuesOfProbability.keySet().iterator().next());
+    private void initialize() {
+        LinearGradient linearGradient = new LinearGradient(0,0,1,1, true, CycleMethod.NO_CYCLE,
+                new Stop(0, Color.web("#3391d1")), new Stop(1, Color.web("#2c4053")));
+        BackgroundFill backgroundFill = new BackgroundFill(linearGradient, CornerRadii.EMPTY, Insets.EMPTY);
+        anchorPane.setBackground(new Background(backgroundFill));
+
     }
 
-    public void setValuesOfProbability(List<Vacation> valuesOfProbability){
+    public void setValuesOfProbability(List<Vacation> valuesOfProbability) throws IOException {
         this.valuesOfProbability.addAll(valuesOfProbability);
+
+        Node[] nodes = new Node[valuesOfProbability.size()];
+        for(int i=0; i< nodes.length; i++){
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getClassLoader().getResource("vacation-item.fxml"));
+            nodes[i] = loader.load();
+
+            VacationItemController vacationItemController = loader.getController();
+            vacationItemController.getNameText().setText("Locatie: " + valuesOfProbability.get(i).getName());
+            vacationItemController.getDescriptionText().setText("Descriere: " + valuesOfProbability.get(i).getDescription());
+
+            vBox.getChildren().add(nodes[i]);
+        }
     }
 }

@@ -88,12 +88,6 @@ public class MainSceneController {
         bayesInference.createInference(offers.getOffers());
         valuesOfProbability = bayesInference.getValuesOfProbability();
 
-        System.out.println(valuesOfProbability.size());
-        Iterator<Vacation> iterator = valuesOfProbability.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next().getName());
-        }
-
         openWindow(actionEvent, valuesOfProbability);
     }
 
