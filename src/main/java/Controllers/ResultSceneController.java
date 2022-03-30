@@ -4,12 +4,12 @@ import DataTypes.Vacation;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ResultSceneController {
 
-    private Map<Vacation, Double> valuesOfProbability = new HashMap<>();
+    private List<Vacation> valuesOfProbability = new ArrayList<>();
 
     @FXML
     private ListView<Vacation> vacationListView;
@@ -19,7 +19,7 @@ public class ResultSceneController {
        // vacationListView.getItems().add(valuesOfProbability.keySet().iterator().next());
     }
 
-    public void setValuesOfProbability(Map<Vacation, Double> valuesOfProbability){
-        this.valuesOfProbability.putAll(valuesOfProbability);
+    public void setValuesOfProbability(List<Vacation> valuesOfProbability){
+        this.valuesOfProbability.addAll(valuesOfProbability);
     }
 }
