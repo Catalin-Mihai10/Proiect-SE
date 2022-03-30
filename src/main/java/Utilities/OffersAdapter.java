@@ -89,37 +89,37 @@ public class OffersAdapter extends TypeAdapter<Offers> {
 
                         switch (vacation.getAge()){
                             case YOUNG_MIDDLE -> {
-                                Vacation vacation1 = vacation;
-                                Vacation vacation2 = vacation;
-                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_YOUNG));
-                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_MIDDLE));
+                                Vacation vacation1 = new Vacation(vacation);
+                                Vacation vacation2 = new Vacation(vacation);
+                                vacation1.setAge(Enums.Age.YOUNG);
+                                vacation2.setAge(Enums.Age.MIDDLE);
                                 vacationsTemp.add(vacation1);
                                 vacationsTemp.add(vacation2);
                             }
                             case YOUNG_OLD -> {
-                                Vacation vacation1 = vacation;
-                                Vacation vacation2 = vacation;
-                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_YOUNG));
-                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_OLD));
+                                Vacation vacation1 = new Vacation(vacation);
+                                Vacation vacation2 = new Vacation(vacation);
+                                vacation1.setAge(Enums.Age.YOUNG);
+                                vacation2.setAge(Enums.Age.OLD);
                                 vacationsTemp.add(vacation1);
                                 vacationsTemp.add(vacation2);
                             }
                             case YOUNG_MIDDLE_OLD -> {
-                                Vacation vacation1 = vacation;
-                                Vacation vacation2 = vacation;
-                                Vacation vacation3 = vacation;
-                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_YOUNG));
-                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_MIDDLE));
-                                vacation3.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_OLD));
+                                Vacation vacation1 = new Vacation(vacation);
+                                Vacation vacation2 = new Vacation(vacation);
+                                Vacation vacation3 = new Vacation(vacation);
+                                vacation1.setAge(Enums.Age.YOUNG);
+                                vacation2.setAge(Enums.Age.MIDDLE);
+                                vacation3.setAge(Enums.Age.OLD);
                                 vacationsTemp.add(vacation1);
                                 vacationsTemp.add(vacation2);
                                 vacationsTemp.add(vacation3);
                             }
                             case MIDDLE_OLD -> {
-                                Vacation vacation1 = vacation;
-                                Vacation vacation2 = vacation;
-                                vacation1.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_MIDDLE));
-                                vacation2.setAge(Enums.Age.valueOf(Constants.USER_CHOSEN_AGE_OLD));
+                                Vacation vacation1 = new Vacation(vacation);
+                                Vacation vacation2 = new Vacation(vacation);
+                                vacation1.setAge(Enums.Age.MIDDLE);
+                                vacation2.setAge(Enums.Age.OLD);
                                 vacationsTemp.add(vacation1);
                                 vacationsTemp.add(vacation2);
                             }

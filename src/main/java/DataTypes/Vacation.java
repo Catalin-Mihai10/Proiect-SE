@@ -29,6 +29,17 @@ public class Vacation {
         setLocation(location);
     }
 
+    public Vacation(Vacation vacation)
+    {
+        setName(vacation.getName());
+        setDescription(vacation.getDescription());
+        setAge(vacation.getAge());
+        setTemperature(vacation.getTemperature());
+        setActivity(vacation.getActivity());
+        setBudget(vacation.getBudget());
+        setLocation(vacation.getLocation());
+    }
+
     public String getName() {
         return name;
     }
