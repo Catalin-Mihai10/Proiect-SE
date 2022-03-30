@@ -42,7 +42,7 @@ public class ConversionHandler {
     }
 
     public Enums.Budget convertBudget(String budget){
-        return Enums.Budget.convertFromStringToBudget(budget);
+        return Enums.Budget.convertFromStringToBudgetUser(budget);
     }
 
     public Enums.Locations convertLocation(String location){

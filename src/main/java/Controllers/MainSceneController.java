@@ -22,12 +22,16 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
-import javafx.scene.paint.*;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.CycleMethod;
+import javafx.scene.paint.LinearGradient;
+import javafx.scene.paint.Stop;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Map;
+import java.util.List;
 
 public class MainSceneController {
 
@@ -72,9 +76,8 @@ public class MainSceneController {
         String budget = bugetTextField.getText();
         String location = (String) locationChoiseBox.getSelectionModel().getSelectedItem();
 
-        Map<Vacation, Double> valuesOfProbability;
+        List<Vacation> valuesOfProbability;
 
-        System.out.println(budget);
         ConversionHandler conversionHandler = new ConversionHandler();
         Vacation vacation = conversionHandler.convertFromUserInput("","",age,temperature,activity,budget,location);
         ValueAssignment valueAssignment = new ValueAssignment();
@@ -82,12 +85,11 @@ public class MainSceneController {
 
         BayesInference bayesInference = new BayesInference(valueAssignment);
         Offers offers = DataHandler.readFromFile(Constants.DATABASE_PATH);
-        System.out.println(Constants.DATABASE_PATH);
         bayesInference.createInference(offers.getOffers());
         valuesOfProbability = bayesInference.getValuesOfProbability();
 
         System.out.println(valuesOfProbability.size());
-        Iterator<Vacation> iterator = valuesOfProbability.keySet().iterator();
+        Iterator<Vacation> iterator = valuesOfProbability.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next().getName());
         }
@@ -95,7 +97,7 @@ public class MainSceneController {
         openWindow(actionEvent, valuesOfProbability);
     }
 
-    private void openWindow(ActionEvent actionEvent, Map<Vacation, Double> valuesOfProbability) throws IOException {
+    private void openWindow(ActionEvent actionEvent, List<Vacation> valuesOfProbability) throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getClassLoader().getResource("resultscene-view.fxml"));
         AnchorPane anchorPane = loader.load();
