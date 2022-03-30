@@ -7,32 +7,52 @@ public class Enums {
         YOUNG,
         MIDDLE,
         OLD,
+        YOUNG_MIDDLE,
+        YOUNG_OLD,
+        YOUNG_MIDDLE_OLD,
+        MIDDLE_OLD,
         UNDEFINED;
 
         public static Age convertFromStringToAge(String age)
         {
-            Age returnedTemperature;
+            Age returnedAge;
             switch (age)
             {
-                case Constants.CHOSEN_AGE_YOUNG -> {
-                    returnedTemperature =  YOUNG;
+                case Constants.USER_CHOSEN_AGE_YOUNG, Constants.CHOSEN_YOUNG -> {
+                    returnedAge =  YOUNG;
                     break;
                 }
-                case Constants.CHOSEN_AGE_MIDDLE -> {
-                    returnedTemperature = MIDDLE;
+                case Constants.USER_CHOSEN_AGE_MIDDLE, Constants.CHOSEN_MIDDLE -> {
+                    returnedAge = MIDDLE;
                     break;
                 }
-                case Constants.CHOSEN_AGE_OLD ->  {
-                    returnedTemperature = OLD;
+                case Constants.USER_CHOSEN_AGE_OLD, Constants.CHOSEN_OLD ->  {
+                    returnedAge = OLD;
+                    break;
+                }
+                case Constants.CHOSEN_YOUNG_MIDDLE -> {
+                    returnedAge = YOUNG_MIDDLE;
+                    break;
+                }
+                case Constants.CHOSEN_YOUNG_OLD -> {
+                    returnedAge = YOUNG_OLD;
+                    break;
+                }
+                case Constants.CHOSEN_YOUNG_MIDDLE_OLD -> {
+                    returnedAge = YOUNG_MIDDLE_OLD;
+                    break;
+                }
+                case Constants.CHOSEN_MIDDLE_OLD -> {
+                    returnedAge = MIDDLE_OLD;
                     break;
                 }
 
-                default -> {
-                    returnedTemperature = UNDEFINED;
+                    default -> {
+                    returnedAge = UNDEFINED;
                     break;
                 }
             }
-            return returnedTemperature;
+            return returnedAge;
         }
     }
 
