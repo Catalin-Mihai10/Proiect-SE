@@ -4,7 +4,9 @@ import DataTypes.Vacation;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.scene.Node;
+import javafx.scene.control.Separator;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;
@@ -41,12 +43,20 @@ public class ResultSceneController {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getClassLoader().getResource("vacation-item.fxml"));
             nodes[i] = loader.load();
+            final int j=i;
+            nodes[i].setOnMouseEntered(mouseEvent -> {
+                nodes[j].setStyle("-fx-background-color : #B3B1B1");
+            });
+            nodes[i].setOnMouseExited(mouseEvent -> {
+                nodes[j].setStyle("-fx-background-color : #FFFFFF");
+            });
 
             VacationItemController vacationItemController = loader.getController();
             vacationItemController.getNameText().setText("Locatie: " + valuesOfProbability.get(i).getName());
             vacationItemController.getDescriptionText().setText("Descriere: " + valuesOfProbability.get(i).getDescription());
 
             vBox.getChildren().add(nodes[i]);
+            vBox.getChildren().add(new Separator(Orientation.HORIZONTAL));
         }
     }
 }
