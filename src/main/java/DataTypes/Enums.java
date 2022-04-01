@@ -175,32 +175,37 @@ public class Enums {
         COUNTRY,
         EUROPE,
         GLOBAL,
+        IRRELEVANT,
         UNDEFINED;
 
-        public static Locations convertFromStringToBudget(String location)
+        public static Locations convertFromStringToLocation(String location)
         {
-            Locations returnedBudget;
+            Locations returnedLocation;
             switch (location)
             {
                 case Constants.CHOSEN_LOCATION_COUNTRY, Constants.USER_CHOSEN_LOCATION_COUNTRY -> {
-                    returnedBudget =  COUNTRY;
+                    returnedLocation =  COUNTRY;
                     break;
                 }
                 case Constants.CHOSEN_LOCATION_EUROPE, Constants.USER_CHOSEN_LOCATION_EUROPE -> {
-                    returnedBudget = EUROPE;
+                    returnedLocation = EUROPE;
                     break;
                 }
                 case Constants.CHOSEN_LOCATION_GLOBAL, Constants.USER_CHOSEN_LOCATION_GLOBAL ->  {
-                    returnedBudget = GLOBAL;
+                    returnedLocation = GLOBAL;
+                    break;
+                }
+                case Constants.IRRELEVANT, Constants.USER_IRRELEVANT -> {
+                    returnedLocation = IRRELEVANT;
                     break;
                 }
 
                 default -> {
-                    returnedBudget = UNDEFINED;
+                    returnedLocation = UNDEFINED;
                     break;
                 }
             }
-            return returnedBudget;
+            return returnedLocation;
         }
     }
 

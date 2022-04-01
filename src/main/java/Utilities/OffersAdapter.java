@@ -82,7 +82,7 @@ public class OffersAdapter extends TypeAdapter<Offers> {
 
                             if(Constants.LOCATION.equals(fieldNameV)){
                                 jsonTokenV = jsonReader.peek();
-                                vacation.setLocation(Enums.Locations.convertFromStringToBudget(jsonReader.nextString()));
+                                vacation.setLocation(Enums.Locations.convertFromStringToLocation(jsonReader.nextString()));
                             }
                         }
                         jsonReader.endObject();

@@ -46,6 +46,6 @@ public class ConversionHandler {
     }
 
     public Enums.Locations convertLocation(String location){
-        return Enums.Locations.convertFromStringToBudget(location);
+        return Enums.Locations.convertFromStringToLocation(location);
     }
 }

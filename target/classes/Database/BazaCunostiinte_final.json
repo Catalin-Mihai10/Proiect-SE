@@ -1,0 +1,1243 @@
+{
+ "offers":
+  [
+	{
+	"name": "Black Sea",
+	"description": "On vacation at the beach",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Little Mountain",
+	"description": "On the mountain on a hike",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Visit Budapest",
+	"description": "Visiting the city",
+	"age":"2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+	
+	{
+	"name": "Pilgrimage to Jerusalem",
+	"description": "Visiting the holy city",
+	"age":"2/3",
+	"temperature":"cald",
+	"activity":"irelevant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+
+	{
+	"name": "Beach in Bulgaria",
+	"description": "You can choose from the 10 resorts on the Bulgarian coast: Sunny Beach, Golden Sands, Albena, Dunes, Hellenes, Obzor, Nessebar, Constantine and Helen, Sunny Day and Sozopol.",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mic",
+ 	"location":"europa"
+	},
+
+	{
+	"name": "Turkey Resort",
+	"description": "Antalya is one of the most sought after resorts in this country. But there are many who prefer Kusadasi, Bodrum or Marmaris.",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+	
+	{
+	"name": "Great Greece",
+	"description": "It has almost become a holiday destination as popular for Romanians as the tourist resorts in Romania.",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+
+	{
+	"name": "Pilgrimage to Mount Athos",
+	"description": "Mount Athos is one of the most popular places for Christian pilgrims. It houses about 1,400 monks in 20 Orthodox monasteries.",
+	"age":"2/3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"europa"
+	},
+	
+	{
+	"name": "Visit Madrid",
+	"description": "If you have chosen to visit Spain, you have to start with Madrid! This city is so good-looking and rich in experience that it is not in vain that you hear so many people going there.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name": "Visit Barcelona",
+	"description": "Visit locations in Barcelona",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},	
+	
+	{
+	"name": "Beach Spain",
+	"description": "The beach in Spain",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+	
+	{
+	"name": "Mare Italia",
+	"description": "Spend a relaxing week on Italian beaches",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+		
+	{
+	"name": "Visit the Vatican",
+	"description": "The Vatican, the smallest independent state in the world, both in terms of area and population, is located in Rome and has an area of ​​half a square kilometer and a population of 1000 inhabitants.",
+	"age":"2/3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name": "Visit Paris",
+	"description": "Paris, the capital of France, is the most romantic city in the world. Here, in the  City of Lights , you can visit the Louvre Museum, the Eiffel Tower, Notre Dame, the Latin Quarter or Montmartre.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name": "Holiday Thailand Khao Lak and Phuket",
+	"description": "Family vacation in Thailand",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+		
+	{
+	"name": "Holiday Seychelles",
+	"description": "Luxury stay in Seychelles",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name": "Holiday in Madeira",
+	"description": "Group holidays for families in Madeira",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+			
+	{
+	"name": "Vacanta Cancun",
+	"description": "Visit the wonders of Mexico",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"global"
+	},
+			
+	{
+	"name": "Vacanta Riviera Maya",
+	"description": "Go to the Mexican beaches",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+			
+	{
+	"name": "Circuit Peru",
+	"description": "Tour the region of Peru",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"irelevant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+
+	{
+	"name": "Circuit Costa Rica",
+	"description": "Wild Jungle Adventure",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"global"
+	},
+	
+	{
+	"name": "South Africa Circuit",
+	"description": "Visit the largest African country",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"irelevant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+		
+	{
+	"name": "Holiday Mauritius",
+	"description": "Relax in the resort of Mauritius",
+	"age":"1/2/3",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+	
+	{
+	"name": "Maldives",
+	"description": "Holidays in the Maldives",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+		
+	{
+	"name": "Hurghada",
+	"description": "Holiday with children",
+	"age":"2",
+	"temperature":"cald",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"global"
+	},
+		
+	{
+	"name": "Safari in Kenya",
+	"description": "Safari in Africa",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name": "Zanzibar",
+	"description": "Holiday with children in Zanzibar",
+	"age":"2",
+	"temperature":"cald",
+	"activity":"irelevant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name": "Cascade Cailor",
+	"description": "A stone's throw from Borșa resort (and when you read this, the nearby Rodna Peak and the moments of childish effort when you tried to memorize its height are sure to come) -a glacial circus, they are reflecting with all their might over the Horse Bridge. ",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Sighetul Marmației",
+	"description": "Memorial to the Victims of Communism and Resistance",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Lake Saint Anne",
+	"description": "We're not just saying that once you get here, you'll be able to bathe in the only volcanic lake in Central Europe, at an altitude of almost 1000 meters, because if you know what we're talking about, you'll be right when we say that a trip in Szeklerland it is equivalent to a journey across the border. ",
+	"age":"1",
+	"temperature":"temperat",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+
+		
+	{
+	"name": "Voroneț Monastery",
+	"description":" in this northern corner of the country, where traditions and history are still extremely present and strong, and people seem exactly the ones the fairy tales were talking about when they described characters with a pure, open heart. ",
+	"age":"3",
+	"temperature":"irelevant",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Danube Delta",
+	"description": "Whether you have reached the delta or not, the image of pelicans living freely and water lilies floating proudly on the expanse of water will surely pamper your imagination.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Transfăgărășan",
+	"description": "The impressive curves of the Transfăgărășean, the ideal of any driver, took the news of this winder away from the Romanian borders.",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Sighisoara",	
+	"description": "The Middle Ages may have been accused of many, even called the Dark Ages, but we know that we are left with many treasures from it.",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Bigar Waterfall",
+	"description": "At the end of the sixth day, immediately after the creation of the world and before enjoying a well-deserved day of rest, the Creator remembered his bag of miracles.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Sibiu",
+	"description": "There is something in the Sibiu air that keeps the tumultuous history and, despite the silence, it seems that the slightest sneeze could unleash the storm.",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "The Merry Cemetery from Săpânța",
+	"description": "If visiting a cemetery has never given you a good mood, it's worth getting all the way to the northern border with Ukraine at the Merry Cemetery in Săpânța",
+	"age":"3",
+	"temperature":"irelevant",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Harmony Complex",
+	"description": "If when you were little you wanted a tree house like the ones in the American movies, but you didn't have one, now is the time to give you a weeekned in a tree house",
+	"age":"1",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name":"Roșia Montană",
+	"description": "Did you support the 2013 protest, even if you only thought about it, but you haven't visited Roșia Montană yet?",
+	"age":"1/2/3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Salina Turda",
+	"description": "30 kilometers from Cluj and a few hundred meters underground, Salina Turda presents itself to the tourist eye as an underground world, cold of only 10 degrees Celsius, where nature and man worked side by side, diligently , to provide him with a small town of salt. ",
+	"age":"2/3",
+	"temperature":"rece",
+	"activity":"irelevant",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+
+	{
+	"name": "Danube Boilers",
+	"description": "It's morning and you woke up. The first thought that comes to mind is that, after all the long and tiring road that brought you here last night, at the entrance of the Danube, you want to be rewarded; you want the Danube to be your give back from the effort you made coming here to see her in one of the most glorious positions. ",
+	"age":"1/2/3",
+	"temperature":"temperat",
+	"activity":"relaxant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Alba Iulia Carolina Fortress",
+	"description": "If Transylvania breathes history through every slab of its own, then the White Carolina Fortress is exactly the chapter dedicated to the Habsburg domination in our country.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Peles Castle",
+	"description": "We know that you would not have forgiven us if we had omitted the symbol of Romanian royalty and we also know that you must have visited it on a class trip or in an organized group at the college. But if they passed At least 3 years since you last saw him, you need to refresh your memories, especially since you can visit him 50 times and you will still be impressed by the opulence of each of the 160 rooms. ",
+	"age":"2/3",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Vasocului Valley Railway",
+	"description": "From Monday to Saturday, from May to October, at the age of 84, the Mocănița locomotive travels the same 21.6 kilometers between Vişeu and Paltin to transport wood and delight tourists.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "God's Bridge",
+	"description": "Shades of green - varnish, leek green, emerald green, electric green, olive green, khaki green -, limestone-carved shapes, white-clad traditions sewn with red thread and legends. Legends told from generation to generation , stories that take their place in even more charm. ",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Lake Saint Anne",
+	"description": "A volcanic lake unique in Europe and the only one of its kind in Romania.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Mădăraș-Harghita Slope",
+	"description": "Mădăraș Resort is a fairytale land and the pictures in the article will speak for themselves",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Chapels of St. Anne",
+	"description": "To get there you have to go through an interesting alley and in the background you have a view of the city",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Statue of the Heart of Jesus",
+	"description": "He is 22 meters tall and is the tallest figure of Jesus in Eastern Europe",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Valea Zălanului",
+	"description": "The Romanian Heaven's Corner of Prince Charles",
+	"age":"1/2/3",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+
+		
+	{
+	"name": "St. Stephen's Chapel",
+	"description": "Just one and a half km from Tg. Secuiesc, on the two banks of the Casin brook, in the former part of the Casin Mountains, the region is called, today, by the locals the Holy Land.",
+	"age":"1/2/3",
+	"temperature":"irelevant",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Siriu Dam and Lake",
+	"description": "The second largest rockfall in the country",
+	"age":"2",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Cașoca Waterfall",
+	"description": "Getting there is an adventure if you don't have a car",
+	"age":"2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Church of a Stone",
+	"description": "It is a church built of limestone excavated near the church, hence its name.",
+	"age":"3",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Lake Bolboci",
+	"description": "Lake Bolboci is one of the most wonderful natural attractions in the whole Bucegi Natural Park.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Ialomița Cave",
+	"description": "The Cave of Kings, which dates back to antiquity through the presence of myths and written documents.",
+	"age":"1",
+	"temperature":"temperat",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Black from Bucșani",
+	"description": "The largest Bison reserve in Romania.",
+	"age":"2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Bear Cave",
+	"description": "karst formation - deep and narrow corridors, dug by natural erosion in travertine deposits.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Franz Joseph Rocks and the Royal Glade",
+	"description": "is located at 1270 meters and was the most frequented place by the Romanian monarchs for walks and country parties when they were visited by the distinguished guests of the Royal House.",
+	"age":"2/3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+			
+	{
+	"name": "Falcon Stone Nature Reserve",
+	"description": "From Băile Tușnad, after crossing the railway, at a certain moment the road forks, on the left you reach the skunk, another route, and on the right the route continues to Stânca Șoimilor.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"irelevant",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+
+	{
+	"name": "AZUGA SKI & BIKE RESORT resort",
+	"description": "The resort of Azuga is located on the upper valley of Prahova, at an altitude of 935 m, being the ideal place for both rest and winter sports, hiking or mountain biking.",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mediu",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "Caraiman Monastery",
+	"description": "Another fairytale landscape from the category #BeautifulBeauty.",
+	"age":"2/3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name": "Topliţa thermal water waterfall",
+	"description": "It has been declared a natural monument, a protected area of national interest and a biological and landscape nature reserve.",
+	"age":"2/3",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+	
+	{
+	"name": "climb Bihor Peak",
+	"description": "Scattered by numerous karst phenomena (caves, canyons, valleys, etc.), the highest peak rises under the name of Bihor peak or Curcubăta Mare, at an altitude of 1,849 m.",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mic",
+ 	"location":"aproape"
+	},
+		
+	{
+	"name":"Paris",
+	"description":"Paris is filled with highly regarded museums, monuments and churches.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"London",
+	"description":"Exploring the world-class British Museum, seeing a musical in the West End theater district, touring the Tower of London and gorging on fish and chips or a Sunday roast at a local pub are all part of the London bucket list experience. ",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Rome",
+	"description":"Rome is a can't-miss spot on your trip to Europe.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Florence",
+	"description":"Florence, Italy, boasts top-notch museums, stunning architecture and mouthwatering cuisine. ",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Barcelona",
+	"description":"Barcelona, Spain's diverse architecture sets the city apart from other European destinations.",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Swiss Alps",
+	"description":"Located south of Zurich, Bern and Basel, the Swiss Alps are a haven for winter sports enthusiasts. While skiing, hiking and snowboarding tend to dominate this region, you'll also discover quaint towns, serene lakes and gorgeous scenery.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+
+		
+	{
+	"name":"Amsterdam",
+	"description":"Spend the day biking through the city's stylish streets before exploring noteworthy museums, such as the Van Gogh Museum, the Dutch Resistance Museum, the Rembrandt House Museum and the Anne Frank House.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"Santorini",
+	"description":"Visit this Greek island for its unique volcanic landscape, relaxing beaches and picturesque local architecture. ",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Amalfi Coast",
+	"description":"Travel to this coastal region in Italy for once-in-a-lifetime views of the Mediterranean Sea from beautiful cliff-side towns. ",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"Prague",
+	"description":"A vacation in Prague will leave you feeling as if you've stepped into a fairy tale.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Venice",
+	"description":"Travelers of all kinds will be impressed with Venice, Italy's enchanting canals, historical architecture and delectable eateries.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Athens",
+	"description":"Athens was made for history buffs and architecture aficionados thanks to it housing the world-renowned Acropolis and Ancient Agora.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Cyprus",
+	"description":"This island situated off the southern coast of Turkey isn't as popular with foreigners as other European beach and island destinations farther west, though it is favored by Europeans. ",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Vienna",
+	"description":"This storied Austrian city is best known for its music and monarchs.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Madrid",
+	"description":"Spain's capital has all of the makings of a quintessential European vacation: stunning architecture, vibrant nightlife, world-class museums, luxury hotels and, of course, plenty of delicious Spanish food and drinks.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Dublin",
+	"description":"Ireland's most populous city has long been a popular vacation spot for beer drinkers, culture hounds and history buffs.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+
+		
+	{
+	"name":"Stockholm",
+	"description":"Sweden's often cold capital city is best visited during the summer months when warm daytime temperatures in the 60s and 70s are present. ",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"Budapest",
+	"description":"The capital of Hungary is filled with an assortment of monuments, museums and religious sites.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"The Azores",
+	"description":"Situated far off of the coast of Lisbon, this Portuguese archipelago is an underrated European gem.",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"Berlin",
+	"description":"More than three decades since the fall of the Berlin Wall, Germany's capital city boasts everything from museums and monuments to thriving dining and nightclub scenes.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Munich",
+	"description":"Though Munich may be one of the most expensive cities in Germany, you'll find a fair amount of things to do that don't require opening your wallet.",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Copenhagen",
+	"description":"Copenhagen is full of everything from top-notch art and history museums to incredible castles and palaces for visitors to explore. ",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Istanbul",
+	"description":"Skyscrapers stand next to historical monuments in Istanbul, an ancient city that boasts many modern advances. ",
+	"age":"1/2",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Seville",
+	"description":"Seville is the jewel of Andalucia. This city, which sits in southern Spain, is home to a smattering of stunning architectural marvels, including the Plaza de España and Real Alcázar",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Reykjavik",
+	"description":"Iceland's largest city is a gateway to some of the country's most incredible natural attractions. Drive along the famed Golden Circle route to check out can't-miss sights like Thingvellir National Park, the Gullfoss waterfall and the very active Strokkur geyser.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Lumbini, Nepal",
+	"description":"Tucked away in Rupandehi in Nepal, Lumbini is revered in Buddhism as the birthplace of Buddha. It was here, back in 623 BC, that Siddhartha Gautama entered the world and began his spiritual journey to becoming Lord Buddha.",
+	"age":"3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+
+		
+	{
+	"name":"Mecca, Saudi Arabia",
+	"description":"Arguably the most famous pilgrimage site in the world, Mecca is the birthplace of the Prophet Muhammad and where he received the first revelation of the Qur’an.",
+	"age":"3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+	
+	{
+	"name":"Western Wall, Israel",
+	"description":"The Western Wall, or Wailing Wall, is the most sacred site in the world for the Jewish people.",
+	"age":"3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Vatican City",
+	"description":"A tiny enclave, surrounded by Rome, the Vatican City is the centre of the Roman Catholic Church. Also known as the Holy See, it has been the home of the Pope since 1378.",
+	"age":"3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"Golden Temple, India",
+	"description":"Made from marble and with a distinctive dome covered in gold leaf, the Golden Temple in Amritsar is the most important gudwara (holy place) in the Sikh religion.",
+	"age":"3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Bethlehem, Palestine",
+	"description":"Revered by Christians as the birthplace of Jesus, the West Bank town of Bethlehem hosts over two million pilgrims each year.",
+	"age":"3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Badrinath, India",
+	"description":"The Hindu religion has four important pilgrimage centres, known collectively as the Charm Dam.",
+	"age":"3",
+	"temperature":"cald",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Wittenberg",
+	"description":"In 1517, Martin Luther challenged students and clerics in Wittenberg to a debate about the Catholic Church’s selling of indulgences in exchange for salvation.",
+	"age":"3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Palitana",
+	"description":"In the holy city of Palitana, Shatrunjaya Hill is an important place of worship in Jainism, a belief system that revolves around non-violence toward all living things – people, animals, even insects.",
+	"age":"3",
+	"temperature":"temperat",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Fiji",
+	"description":"With its 332 islands of pristine white sands dotted with palm trees swaying to the tune of a tropical breeze, you’d be forgiven thinking that you’ve found heaven on earth",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"New York",
+	"description":"Hotel service is usually impeccable in the Big Apple, but don’t forget that a porter merely picking up your bag will leave you a couple of dollars lighter.",
+	"age":"1/2",
+	"temperature":"irelevant",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"global"
+	},
+
+		
+	{
+	"name":"Bora Bora",
+	"description":"Famous with celebrities such as Nicole Kidman and Vince Vaughn, the Island of Bora Bora in French Polynesia isn’t designed for thrifty holidayers",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+	
+	{
+	"name":"Dubai",
+	"description":"Playground for sheikhs and oligarchs, Dubai’s land of luxury boasts an array of grand hotels. Some bedrooms are even equipped with underwater views",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Aitutaki",
+	"description":"Aitutaki in the Cook Islands, with close ties to New Zealand, is a dream destination for closet castaways.",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+	
+	{
+	"name":"Kauai",
+	"description":"Called the Garden Isle, Kaua'i is a tropical Eden. Lush rainforests, waterfalls, and spectacular green coastal peaks lure nature lovers from around the world.",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Mamanuca",
+	"description":"If you're dreaming of an idyllic South Seas island bathed in sunshine, the Mamanuca Islands in Fiji fit the bill.",
+	"age":"1/2",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"The Caribbean",
+	"description":"If you like the glittering jet-setter scene, private villas, and pretty beaches, French-influenced St. Barts should be top on your list.",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Bahamas",
+	"description":"Almost 300 kilometers east of Florida, the beautiful Abacos, in the Bahamas, offer some of the world's best waters for boating and sailing.",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Belize",
+	"description":"Off the tip of the Yucatán Peninsula, Ambergris Caye in Belize is one of the most popular places to visit in Belize and the largest of its 200 cayes",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Dominican Republic",
+	"description":"On the eastern side of the island of Hispaniola, the Dominican Republic is a top choice for budget-minded travelers.",
+	"age":"1",
+	"temperature":"cald",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Blue Lagoon",
+	"description":"Amid the lunar-like arctic terrain of Iceland, the Blue Lagoon is a surreal vision of serenity.",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"global"
+	},
+
+		
+	{
+	"name":"Jigokudani Monkey Park",
+	"description":"The translation is something like “Hell’s Valley” because it looks like what you might expect hell to look like — steep, craggly cliffs, with a hot spring bubbling up in the middle.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mare",
+ 	"location":"global"
+	},
+	
+	{
+	"name":"Hiking on a Glacier in New Zealand",
+	"description":"People have been hiking on glaciers in Alaska and elsewhere for years but what makes the Franz Josef and Fox glaciers in New Zealand glaciers so unique is that they’re in a rain forest!",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Fjord Touring, Norway",
+	"description":"That’s the best way to see fjords, which are narrow inlets of water that were carved by glaciers and are surrounded by steep cliffs on either side. ",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"IceHotel, Sweden",
+	"description":"More than a hotel, the IceHotel,is an art project. Everything is made of snow and ice – the entrance, the walls, lobby bar, the beds –- even the chandeliers! As soon as the snow begins to fall in November, a team of architects, designers and artists builds steel frames then starts spraying them with snow.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"relaxant",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Trans-Siberian Railroad, Russia to China",
+	"description":"The Trans-Siberian Railroad runs from Russia to China, through St. Petersburg, Moscow, Beijing and Mongolia. It’s the longest railroad in the world and has been called the world’s greatest railway journey.",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"recreativ",
+	"budget":"mediu",
+ 	"location":"global"
+	},
+		
+	{
+	"name":"Whistler Blackcomb, Canada",
+	"description":"Now part of Vail Resorts group, Whistler Blackcomb combines the superb terrain of two mountains to make it Canada's premier ski resort and the largest winter sports area in North America.",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Courchevel, France",
+	"description":"Despite its decidedly upscale villages and reputation, Courchevel is for serious skiers looking for snow thrills of a lifetime. ",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Zermatt, Switzerland",
+	"description":"Even if it didn't have one of the world's most beautiful mountains as a backdrop, Switzerland's ski resort of Zermatt would be a place skiers dream about. ",
+	"age":"1",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+			
+	{
+	"name":"Aspen Snowmass, Colorado, USA",
+	"description":"Top among the several ski resorts in Colorado, Aspen Snowmass is made up of four ski areas surrounding Aspen and Snowmass Village.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"global"
+	},
+			
+	{
+	"name":"Val d'Isere, France",
+	"description":"Skiing legend Jean-Claude Killy made his home-town one of the best-known ski resorts in Europe after his breathtaking sweep of three gold medals at the 1968 Winter Olympics in Grenoble.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+
+		
+	{
+	"name":"Cortina D'Ampezzo, Italy",
+	"description":"The five ragged peaks of the Cinque Torri give upscale Cortina D'Ampezzo the most beautiful setting of any of Italy's ski resorts.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+	
+	{
+	"name":"St. Anton, Austria",
+	"description":"A legendary name in the hearts of skiers, St. Anton is where the first ski club in the Alps began in 1901.",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	},
+		
+	{
+	"name":"Kitzbühel, Austria",
+	"description":"In the Austrian Alps, within easy reach of both Innsbruck and Salzburg, Kitzbühel looks like a travel poster for Alpine ski towns with its fresco-painted buildings and mountain chalets. ",
+	"age":"1/2",
+	"temperature":"rece",
+	"activity":"sportiv",
+	"budget":"mare",
+ 	"location":"europa"
+	}
+		
+  ]
+}

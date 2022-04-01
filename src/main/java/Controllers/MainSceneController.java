@@ -41,6 +41,8 @@ public class MainSceneController {
     ObservableList<String> locationList = FXCollections
             .observableArrayList("Inside the country","Inside Europe","Everywhere in the world","Irrelevant");
 
+    private Offers offers;
+
     @FXML
     private AnchorPane anchorPane;
     @FXML
@@ -67,6 +69,8 @@ public class MainSceneController {
                 new Stop(0, Color.web("#3391d1")), new Stop(1, Color.web("#2c4053")));
         BackgroundFill backgroundFill = new BackgroundFill(linearGradient, CornerRadii.EMPTY, Insets.EMPTY);
         anchorPane.setBackground(new Background(backgroundFill));
+
+        offers = DataHandler.readFromFile(Constants.DATABASE_PATH);
     }
 
     public void submit(ActionEvent actionEvent) throws IOException {
@@ -84,7 +88,6 @@ public class MainSceneController {
         valueAssignment.assingValues(vacation);
 
         BayesInference bayesInference = new BayesInference(valueAssignment);
-        Offers offers = DataHandler.readFromFile(Constants.DATABASE_PATH);
         bayesInference.createInference(offers.getOffers());
         valuesOfProbability = bayesInference.getValuesOfProbability();
 

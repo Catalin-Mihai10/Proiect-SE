@@ -38,7 +38,6 @@ public class Serializer {
                 .create();
 
         deserializedData = gson.fromJson(bufferedReader, Offers.class);
-
         return deserializedData;
     }
 

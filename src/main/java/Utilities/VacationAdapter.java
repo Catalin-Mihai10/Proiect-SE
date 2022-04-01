@@ -78,7 +78,7 @@ public class VacationAdapter extends TypeAdapter<Vacation> {
 
             if(Constants.LOCATION.equals(fieldName)){
                 jsonToken = jsonReader.peek();
-                vacation.setLocation(Enums.Locations.convertFromStringToBudget(jsonReader.nextString()));
+                vacation.setLocation(Enums.Locations.convertFromStringToLocation(jsonReader.nextString()));
             }
 
         }

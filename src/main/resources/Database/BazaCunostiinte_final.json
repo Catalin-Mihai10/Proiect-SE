@@ -1,5 +1,5 @@
 {
- "locatii":
+ "offers":
   [
 	{
 	"name": "Black Sea",
@@ -7,7 +7,7 @@
 	"age":"1/2/3",
 	"temperature":"cald",
 	"activity":"relaxant",
-	"budget":"redus",
+	"budget":"mic",
  	"location":"aproape"
 	},
 	
@@ -17,7 +17,7 @@
 	"age":"1/2",
 	"temperature":"rece",
 	"activity":"sportiv",
-	"budget":"redus",
+	"budget":"mic",
  	"location":"aproape"
 	},
 	
@@ -47,7 +47,7 @@
 	"age":"1/2/3",
 	"temperature":"cald",
 	"activity":"relaxant",
-	"budget":"redus",
+	"budget":"mic",
  	"location":"europa"
 	},
 
@@ -77,7 +77,7 @@
 	"age":"2/3",
 	"temperature":"cald",
 	"activity":"recreativ",
-	"budget":"redus",
+	"budget":"mic",
  	"location":"europa"
 	},
 	
@@ -659,7 +659,7 @@
 	"age":"1/2",
 	"temperature":"temperat",
 	"activity":"recreativ",
-	"budget":",mare",
+	"budget":"mare",
  	"location":"europa"
 	},
 			

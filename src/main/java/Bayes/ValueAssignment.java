@@ -144,6 +144,12 @@ public class ValueAssignment {
                 locationsMap.put(Enums.Locations.GLOBAL, Constants.MAX_VALUE);
                 break;
             }
+            case IRRELEVANT -> {
+                locationsMap.put(Enums.Locations.COUNTRY, Constants.MAX_VALUE);
+                locationsMap.put(Enums.Locations.EUROPE, Constants.MAX_VALUE);
+                locationsMap.put(Enums.Locations.GLOBAL, Constants.MAX_VALUE);
+                break;
+            }
         }
     }
 
