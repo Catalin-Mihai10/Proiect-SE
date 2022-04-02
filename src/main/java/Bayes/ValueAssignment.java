@@ -8,31 +8,56 @@ import java.util.*;
 
 public class ValueAssignment {
 
-    private Enums.Age age = null;
+    private Enums.Locations location = null;
+    private final Map<Enums.Age, Double> ageMap = new HashMap<>();
     private final Map<Enums.Temperature, Double> temperatureMap = new HashMap<>();
     private final Map<Enums.Activities, Double> activitiesMap = new HashMap<>();
     private final Map<Enums.Budget, Double> budgetMap = new HashMap<>();
-    private final Map<Enums.Locations, Double> locationsMap = new HashMap<>();
-
     public ValueAssignment(){}
 
     public void assingValues(Vacation vacation){
-        age = vacation.getAge();
-        mapTemperatureValues(vacation, temperatureMap);
-        mapActivitiesValues(vacation, activitiesMap);
-        mapBudgetValues(vacation, budgetMap);
-        mapLocationsValues(vacation, locationsMap);
+        mapAgeValues(vacation.getAge(), ageMap);
+        mapTemperatureValues(vacation.getTemperature(), temperatureMap);
+        mapActivitiesValues(vacation.getActivity(), activitiesMap);
+        mapBudgetValues(vacation.getBudget(), budgetMap);
+        location = vacation.getLocation();
     }
 
-    public Enums.Age getAgeValue(){ return age; }
+    public Double getAgeValue(Enums.Age age){ return ageMap.get(age); }
     public Double getTemperatureValue(Enums.Temperature temperature){ return temperatureMap.get(temperature); }
     public Double getActivitiesValue(Enums.Activities activity) { return activitiesMap.get(activity); }
     public Double getBudgetValue(Enums.Budget budget) { return budgetMap.get(budget); }
-    public Double getLocationsValue(Enums.Locations location) { return locationsMap.get(location); }
+    public Enums.Locations getLocationsValue() { return location;}
 
-    public void mapTemperatureValues(Vacation vacation, Map<Enums.Temperature, Double> temperatureMap)
+    public void mapAgeValues(Enums.Age age, Map<Enums.Age, Double> ageMap)
     {
-        switch (vacation.getTemperature())
+        switch (age)
+        {
+            case YOUNG -> {
+                ageMap.put(Enums.Age.YOUNG, Constants.MAX_VALUE);
+                ageMap.put(Enums.Age.MIDDLE, Constants.MIN_VALUE);
+                ageMap.put(Enums.Age.OLD, Constants.MIN_VALUE);
+                break;
+            }
+            case MIDDLE -> {
+                ageMap.put(Enums.Age.YOUNG, Constants.MIN_VALUE);
+                ageMap.put(Enums.Age.MIDDLE, Constants.MAX_VALUE);
+                ageMap.put(Enums.Age.OLD, Constants.MIN_VALUE);
+                break;
+            }
+            case OLD -> {
+                ageMap.put(Enums.Age.YOUNG, Constants.MIN_VALUE);
+                ageMap.put(Enums.Age.MIDDLE, Constants.MIN_VALUE);
+                ageMap.put(Enums.Age.OLD, Constants.MAX_VALUE);
+                break;
+            }
+        }
+    }
+
+
+    public void mapTemperatureValues(Enums.Temperature temperature, Map<Enums.Temperature, Double> temperatureMap)
+    {
+        switch (temperature)
         {
             case COLD -> {
                 temperatureMap.put(Enums.Temperature.COLD, Constants.MAX_VALUE);
@@ -65,9 +90,9 @@ public class ValueAssignment {
         }
     }
 
-    public void mapActivitiesValues(Vacation vacation, Map<Enums.Activities, Double> activitiesMap)
+    public void mapActivitiesValues(Enums.Activities activity, Map<Enums.Activities, Double> activitiesMap)
     {
-        switch (vacation.getActivity())
+        switch (activity)
         {
             case RELAXING -> {
                 activitiesMap.put(Enums.Activities.RELAXING, Constants.MAX_VALUE);
@@ -100,8 +125,9 @@ public class ValueAssignment {
         }
     }
 
-    public void mapBudgetValues(Vacation vacation, Map<Enums.Budget, Double> budgetMap) {
-        switch (vacation.getBudget()) {
+    public void mapBudgetValues(Enums.Budget budget, Map<Enums.Budget, Double> budgetMap) {
+        switch (budget)
+        {
             case REDUCED -> {
                 budgetMap.put(Enums.Budget.REDUCED, Constants.MAX_VALUE);
                 budgetMap.put(Enums.Budget.MEDIUM, Constants.MIN_VALUE);
@@ -118,36 +144,6 @@ public class ValueAssignment {
                 budgetMap.put(Enums.Budget.REDUCED, Constants.MIN_VALUE);
                 budgetMap.put(Enums.Budget.MEDIUM, Constants.MIN_VALUE);
                 budgetMap.put(Enums.Budget.LARGE, Constants.MAX_VALUE);
-                break;
-            }
-        }
-    }
-
-    public void mapLocationsValues(Vacation vacation, Map<Enums.Locations, Double> locationsMap)
-    {
-        switch (vacation.getLocation()) {
-            case COUNTRY -> {
-                locationsMap.put(Enums.Locations.COUNTRY, Constants.MAX_VALUE);
-                locationsMap.put(Enums.Locations.EUROPE, Constants.MIN_VALUE);
-                locationsMap.put(Enums.Locations.GLOBAL, Constants.MIN_VALUE);
-                break;
-            }
-            case EUROPE -> {
-                locationsMap.put(Enums.Locations.COUNTRY, Constants.MIN_VALUE);
-                locationsMap.put(Enums.Locations.EUROPE, Constants.MAX_VALUE);
-                locationsMap.put(Enums.Locations.GLOBAL, Constants.MIN_VALUE);
-                break;
-            }
-            case GLOBAL -> {
-                locationsMap.put(Enums.Locations.COUNTRY, Constants.MIN_VALUE);
-                locationsMap.put(Enums.Locations.EUROPE, Constants.MIN_VALUE);
-                locationsMap.put(Enums.Locations.GLOBAL, Constants.MAX_VALUE);
-                break;
-            }
-            case IRRELEVANT -> {
-                locationsMap.put(Enums.Locations.COUNTRY, Constants.MAX_VALUE);
-                locationsMap.put(Enums.Locations.EUROPE, Constants.MAX_VALUE);
-                locationsMap.put(Enums.Locations.GLOBAL, Constants.MAX_VALUE);
                 break;
             }
         }

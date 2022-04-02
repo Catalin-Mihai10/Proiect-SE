@@ -42,7 +42,7 @@ public class BayesInference {
 
     private Double calculateSP(List<Vacation> list, List<Integer[]> set){
         double probability = Constants.MIN_VALUE;
-        int CARD_OMEGA = 1;
+        int CARD_OMEGA = list.size();
         Double P_VJ = Constants.MAX_VALUE / CARD_OMEGA;
 
         for(Vacation vacation : list){
@@ -60,10 +60,10 @@ public class BayesInference {
 
             for(Integer[] integers : set){
                 if(
-                        (valueAssignment.getTemperatureValue(vacation.getTemperature()) == (double) integers[0]) &&
-                                (valueAssignment.getActivitiesValue(vacation.getActivity()) == (double) integers[1]) &&
-                                (valueAssignment.getBudgetValue(vacation.getBudget()) == (double) integers[2]) &&
-                                (valueAssignment.getLocationsValue(vacation.getLocation()) == (double) integers[3])
+                        (valueAssignment.getAgeValue(vacation.getAge()) == (double) integers[0]) &&
+                                (valueAssignment.getTemperatureValue(vacation.getTemperature()) == (double) integers[1]) &&
+                                (valueAssignment.getActivitiesValue(vacation.getActivity()) == (double) integers[2]) &&
+                                (valueAssignment.getBudgetValue(vacation.getBudget()) == (double) integers[3])
                 ) {
 
                     for (Integer integer : integers) if (integer == 1) auxValue++;
@@ -105,7 +105,7 @@ public class BayesInference {
         List<Vacation> tempArray = new ArrayList<>();
 
         for(Vacation vacation : vacationList)
-            if(vacation.getAge() == valueAssignment.getAgeValue())
+            if(vacation.getLocation() == valueAssignment.getLocationsValue())
                 tempArray.add(vacation);
 
         return tempArray;
@@ -114,15 +114,14 @@ public class BayesInference {
     public List<Vacation> getValuesOfProbability(){
         Map<Vacation, Double> resultsMap = valuesOfProbability.entrySet()
                 .stream()
-                .limit(10)
-                .sorted(Map.Entry.comparingByValue())
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,
-                        (oldValue, newValue) -> oldValue, HashMap::new
+                        (oldValue, newValue) -> newValue, LinkedHashMap::new
                 ));
 
-        return new ArrayList<>(resultsMap.keySet());
+        return new ArrayList<>(new HashSet<>(resultsMap.keySet())).stream().limit(10).toList();
     }
 
 }
