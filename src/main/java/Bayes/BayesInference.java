@@ -33,9 +33,7 @@ public class BayesInference {
 
         for (Vacation vacation : omega){
             P_S_VK = calculateICardinal(vacation, S);
-            System.out.println("P_S_VK:" + P_S_VK);
             P_VK_S = (P_S_VK * P_VK)/ p_S;
-            System.out.println("P_VK_S:" + P_VK_S);
             valuesOfProbability.put(vacation, P_VK_S);
         }
 
@@ -50,7 +48,6 @@ public class BayesInference {
             Double P_S_VJ = calculateICardinal(vacation, set);
             probability += P_S_VJ * P_VJ;
         }
-        System.out.println("P:" + probability);
         return probability;
     }
 
@@ -116,9 +113,6 @@ public class BayesInference {
 
         List<Map.Entry<Vacation, Double>> result = new LinkedList<>(valuesOfProbability.entrySet());
         result.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
-
-        for(Map.Entry<Vacation, Double> entry : result)
-            System.out.println(entry.getKey() + ": " + entry.getValue());
 
         List<Vacation> returnedList = new ArrayList<>();
         for(int i = 0 ; i<10  ; i++)
