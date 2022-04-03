@@ -16,7 +16,7 @@
       </ScrollPane>
       <Pane prefHeight="140.0" prefWidth="600.0">
          <children>
-            <Text layoutX="163.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Locatiile potrivite pentru dumneavoastra sunt urmatoarele" textAlignment="CENTER" wrappingWidth="274.9366760253906">
+            <Text layoutX="163.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The right locations for you are as follows" textAlignment="CENTER" wrappingWidth="274.9366760253906">
                <font>
                   <Font size="24.0" />
                </font>
